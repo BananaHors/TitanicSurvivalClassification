@@ -27,7 +27,7 @@ Python 3.10 ili noviji (ja sam radio na 3.14) i paketi iz
 
 ## Pokretanje
 
-Iz korena projekta:
+Iz rootaprojekta:
 
 ```powershell
 cd "c:\Projects\Titanic Survival"
