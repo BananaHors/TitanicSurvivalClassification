@@ -1,0 +1,34 @@
+TUMACENJE REZULTATA
+======================================================================
+
+Najbolji model: LogisticRegression
+  Tacnost (accuracy):   0.8492
+  Preciznost (precision): 0.8182
+  Odziv (recall):       0.7826
+  F1-skor:              0.8
+  ROC-AUC:              0.8726
+
+Najuticajniji atributi (permutaciona vaznost): Title (0.196), Sex (0.188), Age (0.098)
+
+Kljucni nalazi iz podataka:
+  - Pol je najjaci pojedinacni faktor. Zene prezivljavaju 74.2%, muskarci 18.9% (princip 'zene i deca prvi').
+  - Klasa karte: 1. klasa 63.0%, 2. klasa 47.3%, 3. klasa 24.2% - visi polozaj, veca sansa.
+  - Titula sazima pol, uzrast i status; 'Master' (decaci) i 'Mrs/Miss' imaju visoke stope.
+  - Cena karte prati klasu: skuplja karta -> veca sansa.
+  - Velicina porodice je nelinearna: samci i velike porodice prezivljavaju redje od malih (2-4 clana).
+
+Preporuke za dalje:
+  - Optimizacija hiperparametara (GridSearch) i podesavanje praga (preciznost vs odziv).
+  - Jos atributa: velicina grupe po Ticket-u, interakcije Pclass*Sex.
+  - Robusnija imputacija i analiza gresaka modela.
+
+DETALJAN IZVESTAJ KLASIFIKACIJE
+======================================================================
+               precision    recall  f1-score   support
+
+Nije preziveo       0.87      0.89      0.88       110
+     Preziveo       0.82      0.78      0.80        69
+
+     accuracy                           0.85       179
+    macro avg       0.84      0.84      0.84       179
+ weighted avg       0.85      0.85      0.85       179

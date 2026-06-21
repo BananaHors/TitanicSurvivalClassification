@@ -1,0 +1,106 @@
+{
+  "pregled": {
+    "broj_redova": 891,
+    "broj_kolona": 12,
+    "kolone": [
+      "PassengerId",
+      "Survived",
+      "Pclass",
+      "Name",
+      "Sex",
+      "Age",
+      "SibSp",
+      "Parch",
+      "Ticket",
+      "Fare",
+      "Cabin",
+      "Embarked"
+    ],
+    "stopa_prezivljavanja": 0.3838
+  },
+  "nedostajuce_vrednosti": [
+    {
+      "kolona": "Cabin",
+      "nedostaje_n": 687,
+      "nedostaje_%": 77.1
+    },
+    {
+      "kolona": "Age",
+      "nedostaje_n": 177,
+      "nedostaje_%": 19.87
+    },
+    {
+      "kolona": "Embarked",
+      "nedostaje_n": 2,
+      "nedostaje_%": 0.22
+    }
+  ],
+  "cv_rezultati": {
+    "LogisticRegression": {
+      "f1_mean": 0.7677,
+      "f1_std": 0.0334
+    },
+    "RandomForest": {
+      "f1_mean": 0.7442,
+      "f1_std": 0.018
+    },
+    "GradientBoosting": {
+      "f1_mean": 0.7535,
+      "f1_std": 0.0297
+    }
+  },
+  "najbolji_model": "LogisticRegression",
+  "test_metrike": {
+    "accuracy": 0.8492,
+    "precision": 0.8182,
+    "recall": 0.7826,
+    "f1": 0.8,
+    "roc_auc": 0.8726
+  },
+  "vaznost_atributa": [
+    {
+      "atribut": "Title",
+      "vaznost": 0.19557
+    },
+    {
+      "atribut": "Sex",
+      "vaznost": 0.18769
+    },
+    {
+      "atribut": "Age",
+      "vaznost": 0.09821
+    },
+    {
+      "atribut": "Pclass",
+      "vaznost": 0.06004
+    },
+    {
+      "atribut": "SibSp",
+      "vaznost": 0.03095
+    },
+    {
+      "atribut": "FamilySize",
+      "vaznost": 0.02379
+    },
+    {
+      "atribut": "Fare",
+      "vaznost": 0.02188
+    },
+    {
+      "atribut": "IsAlone",
+      "vaznost": 0.02034
+    },
+    {
+      "atribut": "Deck",
+      "vaznost": 0.01274
+    },
+    {
+      "atribut": "Embarked",
+      "vaznost": 0.00433
+    },
+    {
+      "atribut": "Parch",
+      "vaznost": 0.0038
+    }
+  ]
+}

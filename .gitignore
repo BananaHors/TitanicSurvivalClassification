@@ -1,0 +1,12 @@
+# Virtuelno okruženje
+.venv/
+venv/
+
+# Python kes
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
